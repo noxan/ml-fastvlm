@@ -71,6 +71,8 @@ def predict(args):
     if generation_config is not None:
         os.rename(generation_config, os.path.join(model_path, 'generation_config.json'))
 
+    return outputs
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
